@@ -26,7 +26,7 @@ function LoginPage() {
         config
       );
 
-      localStorage.setItem("userInfo", JSON.stringify(data));
+     console.log(localStorage.setItem("userInfo", JSON.stringify(data)));
       
       navigate("/chats");
     } catch (error) {
