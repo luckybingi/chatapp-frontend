@@ -27,7 +27,7 @@ function SignupPage() {
       };
 
       const { data } = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/user`,
+        `${process.env.VITE_API_URL}/api/user`,
         {
           name,
           email,
