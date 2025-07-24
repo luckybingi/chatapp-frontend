@@ -39,6 +39,7 @@ function SignupPage() {
       );
 
       localStorage.setItem("userInfo", JSON.stringify(data));
+      console.log("loggin to login page");
       navigate("/chats");
     } catch (error) {
       console.log("Signup error:", error.response?.data || error.message);

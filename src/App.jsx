@@ -11,6 +11,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />   {/* ✅ Add this */}
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/chats" element={<ChatPage />} />
       </Routes>
