@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import io from "socket.io-client";
 
-const ENDPOINT ="${process.env.VITE_API_URL}";
+const ENDPOINT =`${import.meta.env.VITE_API_URL
+}`;
 let socket;
 
 const ChatPage = () => {

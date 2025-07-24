@@ -14,7 +14,8 @@ function LoginPage() {
     e.preventDefault();
 
     try {
-      console.log("🚀 REACT_APP_API_URL =", process.env.VITE_API_URL);
+      console.log("🚀 REACT_APP_API_URL =", import.meta.env.VITE_API_URL
+);
 
       const config = {
         headers: {
@@ -23,7 +24,8 @@ function LoginPage() {
       };
 
       const { data } = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/user/login`,
+        `${import.meta.env.VITE_API_URL
+}/api/user/login`,
         { email, password },
         config
       );
