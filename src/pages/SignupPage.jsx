@@ -41,8 +41,9 @@ function SignupPage() {
       );
 console.log(import.meta.env.VITE_API_URL);
       localStorage.setItem("userInfo", JSON.stringify(data));
+      window.location.reload();
       console.log("loggin to login page");
-      navigate("/chats");
+      // navigate("/chats");
     } catch (error) {
       console.log("Signup error:", error.response?.data || error.message);
       alert("Signup failed. Email might already exist.");

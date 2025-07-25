@@ -32,9 +32,11 @@ function LoginPage() {
       );
 console.log(import.meta.env.VITE_API_URL);
 
-     console.log(localStorage.setItem("userInfo", JSON.stringify(data)));
-      
-      navigate("/chats");
+localStorage.setItem("userInfo", JSON.stringify(data));
+console.log("User info saved:", localStorage.getItem("userInfo"));
+
+      window.location.reload();
+      // navigate("/chats");
     } catch (error) {
       alert("Invalid credentials");
     }
