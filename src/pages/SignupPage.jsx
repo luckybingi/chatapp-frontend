@@ -38,7 +38,7 @@ function SignupPage() {
         },
         config
       );
-
+console.log(import.meta.env.VITE_API_URL);
       localStorage.setItem("userInfo", JSON.stringify(data));
       console.log("loggin to login page");
       navigate("/chats");

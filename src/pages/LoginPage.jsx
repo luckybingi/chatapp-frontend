@@ -29,6 +29,7 @@ function LoginPage() {
         { email, password },
         config
       );
+console.log(import.meta.env.VITE_API_URL);
 
      console.log(localStorage.setItem("userInfo", JSON.stringify(data)));
       
