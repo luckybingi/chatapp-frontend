@@ -19,7 +19,7 @@ function App() {
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
         <Route path="/" element={user ? <Navigate to="/chats" /> : <Navigate to="/login" />} />
-        <Route path="/login" element={!user ? <LoginPage /> : <Navigate to="/chats" />} />
+        {/* <Route path="/login" element={!user ? <LoginPage /> : <Navigate to="/chats" />} /> */}
         <Route path="/signup" element={!user ? <SignupPage /> : <Navigate to="/chats" />} />
         <Route path="/chats" element={user ? <ChatPage /> : <Navigate to="/login" />} />
       </Routes>
